@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAC130431C0C684F00C088CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC130421C0C684F00C088CC /* main.m */; };
+		DAC130461C0C684F00C088CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC130451C0C684F00C088CC /* AppDelegate.m */; };
+		DAC1304C1C0C684F00C088CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC1304A1C0C684F00C088CC /* Main.storyboard */; };
+		DAC1304E1C0C684F00C088CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC1304D1C0C684F00C088CC /* Assets.xcassets */; };
+		DAC130511C0C684F00C088CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC1304F1C0C684F00C088CC /* LaunchScreen.storyboard */; };
+		DAC1305C1C0C684F00C088CC /* SmarterQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC1305B1C0C684F00C088CC /* SmarterQueueTests.m */; };
+		DAC130671C0C684F00C088CC /* SmarterQueueUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC130661C0C684F00C088CC /* SmarterQueueUITests.m */; };
+		DAC130B21C0C685900C088CC /* SQFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC1307C1C0C685900C088CC /* SQFirstViewController.m */; };
+		DAC130B31C0C685900C088CC /* DEMOLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC1307E1C0C685900C088CC /* DEMOLeftMenuViewController.m */; };
+		DAC130C71C0C685900C088CC /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC130A91C0C685900C088CC /* RECommonFunctions.m */; };
+		DAC130C81C0C685900C088CC /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC130AB1C0C685900C088CC /* RESideMenu.m */; };
+		DAC130C91C0C685900C088CC /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC130AD1C0C685900C088CC /* UIViewController+RESideMenu.m */; };
+		DAC130D31C0C6D2000C088CC /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC130D21C0C6D2000C088CC /* logo.png */; };
+		DAC130D51C0C6FCC00C088CC /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC130D41C0C6FCC00C088CC /* menu.png */; };
+		DAC130D91C0CE20600C088CC /* profile pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DAC130D81C0CE20600C088CC /* profile pic.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAC130581C0C684F00C088CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAC130361C0C684E00C088CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAC1303D1C0C684F00C088CC;
+			remoteInfo = SmarterQueue;
+		};
+		DAC130631C0C684F00C088CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAC130361C0C684E00C088CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAC1303D1C0C684F00C088CC;
+			remoteInfo = SmarterQueue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DAC1303E1C0C684F00C088CC /* SmarterQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmarterQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC130421C0C684F00C088CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAC130441C0C684F00C088CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DAC130451C0C684F00C088CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAC1304B1C0C684F00C088CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAC1304D1C0C684F00C088CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAC130501C0C684F00C088CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAC130521C0C684F00C088CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC130571C0C684F00C088CC /* SmarterQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmarterQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC1305B1C0C684F00C088CC /* SmarterQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmarterQueueTests.m; sourceTree = "<group>"; };
+		DAC1305D1C0C684F00C088CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC130621C0C684F00C088CC /* SmarterQueueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmarterQueueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC130661C0C684F00C088CC /* SmarterQueueUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmarterQueueUITests.m; sourceTree = "<group>"; };
+		DAC130681C0C684F00C088CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC1307B1C0C685900C088CC /* SQFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SQFirstViewController.h; path = "../RESideMenu-master-2/Examples/Simple/RESideMenuExample/SQFirstViewController.h"; sourceTree = "<group>"; };
+		DAC1307C1C0C685900C088CC /* SQFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SQFirstViewController.m; path = "../RESideMenu-master-2/Examples/Simple/RESideMenuExample/SQFirstViewController.m"; sourceTree = "<group>"; };
+		DAC1307D1C0C685900C088CC /* DEMOLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DEMOLeftMenuViewController.h; path = "../RESideMenu-master-2/Examples/Simple/RESideMenuExample/DEMOLeftMenuViewController.h"; sourceTree = "<group>"; };
+		DAC1307E1C0C685900C088CC /* DEMOLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DEMOLeftMenuViewController.m; path = "../RESideMenu-master-2/Examples/Simple/RESideMenuExample/DEMOLeftMenuViewController.m"; sourceTree = "<group>"; };
+		DAC130A81C0C685900C088CC /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		DAC130A91C0C685900C088CC /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		DAC130AA1C0C685900C088CC /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
+		DAC130AB1C0C685900C088CC /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
+		DAC130AC1C0C685900C088CC /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		DAC130AD1C0C685900C088CC /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		DAC130D21C0C6D2000C088CC /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		DAC130D41C0C6FCC00C088CC /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		DAC130D81C0CE20600C088CC /* profile pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "profile pic.jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAC1303B1C0C684F00C088CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC130541C0C684F00C088CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC1305F1C0C684F00C088CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAC130351C0C684E00C088CC = {
+			isa = PBXGroup;
+			children = (
+				DAC130A71C0C685900C088CC /* RESideMenu */,
+				DAC130401C0C684F00C088CC /* SmarterQueue */,
+				DAC1305A1C0C684F00C088CC /* SmarterQueueTests */,
+				DAC130651C0C684F00C088CC /* SmarterQueueUITests */,
+				DAC1303F1C0C684F00C088CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAC1303F1C0C684F00C088CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAC1303E1C0C684F00C088CC /* SmarterQueue.app */,
+				DAC130571C0C684F00C088CC /* SmarterQueueTests.xctest */,
+				DAC130621C0C684F00C088CC /* SmarterQueueUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAC130401C0C684F00C088CC /* SmarterQueue */ = {
+			isa = PBXGroup;
+			children = (
+				DAC1307D1C0C685900C088CC /* DEMOLeftMenuViewController.h */,
+				DAC1307E1C0C685900C088CC /* DEMOLeftMenuViewController.m */,
+				DAC130441C0C684F00C088CC /* AppDelegate.h */,
+				DAC130451C0C684F00C088CC /* AppDelegate.m */,
+				DAC1307B1C0C685900C088CC /* SQFirstViewController.h */,
+				DAC1307C1C0C685900C088CC /* SQFirstViewController.m */,
+				DAC1304A1C0C684F00C088CC /* Main.storyboard */,
+				DAC1304D1C0C684F00C088CC /* Assets.xcassets */,
+				DAC1304F1C0C684F00C088CC /* LaunchScreen.storyboard */,
+				DAC130521C0C684F00C088CC /* Info.plist */,
+				DAC130411C0C684F00C088CC /* Supporting Files */,
+			);
+			path = SmarterQueue;
+			sourceTree = "<group>";
+		};
+		DAC130411C0C684F00C088CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAC130D81C0CE20600C088CC /* profile pic.jpg */,
+				DAC130D41C0C6FCC00C088CC /* menu.png */,
+				DAC130D21C0C6D2000C088CC /* logo.png */,
+				DAC130421C0C684F00C088CC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAC1305A1C0C684F00C088CC /* SmarterQueueTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAC1305B1C0C684F00C088CC /* SmarterQueueTests.m */,
+				DAC1305D1C0C684F00C088CC /* Info.plist */,
+			);
+			path = SmarterQueueTests;
+			sourceTree = "<group>";
+		};
+		DAC130651C0C684F00C088CC /* SmarterQueueUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAC130661C0C684F00C088CC /* SmarterQueueUITests.m */,
+				DAC130681C0C684F00C088CC /* Info.plist */,
+			);
+			path = SmarterQueueUITests;
+			sourceTree = "<group>";
+		};
+		DAC130A71C0C685900C088CC /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DAC130A81C0C685900C088CC /* RECommonFunctions.h */,
+				DAC130A91C0C685900C088CC /* RECommonFunctions.m */,
+				DAC130AA1C0C685900C088CC /* RESideMenu.h */,
+				DAC130AB1C0C685900C088CC /* RESideMenu.m */,
+				DAC130AC1C0C685900C088CC /* UIViewController+RESideMenu.h */,
+				DAC130AD1C0C685900C088CC /* UIViewController+RESideMenu.m */,
+			);
+			name = RESideMenu;
+			path = "RESideMenu-master-2/RESideMenu";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAC1303D1C0C684F00C088CC /* SmarterQueue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC1306B1C0C684F00C088CC /* Build configuration list for PBXNativeTarget "SmarterQueue" */;
+			buildPhases = (
+				DAC1303A1C0C684F00C088CC /* Sources */,
+				DAC1303B1C0C684F00C088CC /* Frameworks */,
+				DAC1303C1C0C684F00C088CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmarterQueue;
+			productName = SmarterQueue;
+			productReference = DAC1303E1C0C684F00C088CC /* SmarterQueue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAC130561C0C684F00C088CC /* SmarterQueueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC1306E1C0C684F00C088CC /* Build configuration list for PBXNativeTarget "SmarterQueueTests" */;
+			buildPhases = (
+				DAC130531C0C684F00C088CC /* Sources */,
+				DAC130541C0C684F00C088CC /* Frameworks */,
+				DAC130551C0C684F00C088CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAC130591C0C684F00C088CC /* PBXTargetDependency */,
+			);
+			name = SmarterQueueTests;
+			productName = SmarterQueueTests;
+			productReference = DAC130571C0C684F00C088CC /* SmarterQueueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAC130611C0C684F00C088CC /* SmarterQueueUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC130711C0C684F00C088CC /* Build configuration list for PBXNativeTarget "SmarterQueueUITests" */;
+			buildPhases = (
+				DAC1305E1C0C684F00C088CC /* Sources */,
+				DAC1305F1C0C684F00C088CC /* Frameworks */,
+				DAC130601C0C684F00C088CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAC130641C0C684F00C088CC /* PBXTargetDependency */,
+			);
+			name = SmarterQueueUITests;
+			productName = SmarterQueueUITests;
+			productReference = DAC130621C0C684F00C088CC /* SmarterQueueUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAC130361C0C684E00C088CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = SmarterQueue;
+				TargetAttributes = {
+					DAC1303D1C0C684F00C088CC = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					DAC130561C0C684F00C088CC = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = DAC1303D1C0C684F00C088CC;
+					};
+					DAC130611C0C684F00C088CC = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = DAC1303D1C0C684F00C088CC;
+					};
+				};
+			};
+			buildConfigurationList = DAC130391C0C684E00C088CC /* Build configuration list for PBXProject "SmarterQueue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAC130351C0C684E00C088CC;
+			productRefGroup = DAC1303F1C0C684F00C088CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAC1303D1C0C684F00C088CC /* SmarterQueue */,
+				DAC130561C0C684F00C088CC /* SmarterQueueTests */,
+				DAC130611C0C684F00C088CC /* SmarterQueueUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAC1303C1C0C684F00C088CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC130D31C0C6D2000C088CC /* logo.png in Resources */,
+				DAC130D51C0C6FCC00C088CC /* menu.png in Resources */,
+				DAC130511C0C684F00C088CC /* LaunchScreen.storyboard in Resources */,
+				DAC130D91C0CE20600C088CC /* profile pic.jpg in Resources */,
+				DAC1304E1C0C684F00C088CC /* Assets.xcassets in Resources */,
+				DAC1304C1C0C684F00C088CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC130551C0C684F00C088CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC130601C0C684F00C088CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAC1303A1C0C684F00C088CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC130C71C0C685900C088CC /* RECommonFunctions.m in Sources */,
+				DAC130461C0C684F00C088CC /* AppDelegate.m in Sources */,
+				DAC130B31C0C685900C088CC /* DEMOLeftMenuViewController.m in Sources */,
+				DAC130C81C0C685900C088CC /* RESideMenu.m in Sources */,
+				DAC130B21C0C685900C088CC /* SQFirstViewController.m in Sources */,
+				DAC130C91C0C685900C088CC /* UIViewController+RESideMenu.m in Sources */,
+				DAC130431C0C684F00C088CC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC130531C0C684F00C088CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC1305C1C0C684F00C088CC /* SmarterQueueTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC1305E1C0C684F00C088CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC130671C0C684F00C088CC /* SmarterQueueUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAC130591C0C684F00C088CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAC1303D1C0C684F00C088CC /* SmarterQueue */;
+			targetProxy = DAC130581C0C684F00C088CC /* PBXContainerItemProxy */;
+		};
+		DAC130641C0C684F00C088CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAC1303D1C0C684F00C088CC /* SmarterQueue */;
+			targetProxy = DAC130631C0C684F00C088CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAC1304A1C0C684F00C088CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAC1304B1C0C684F00C088CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAC1304F1C0C684F00C088CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAC130501C0C684F00C088CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAC130691C0C684F00C088CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAC1306A1C0C684F00C088CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAC1306C1C0C684F00C088CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmarterQueue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SQ.SmarterQueue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAC1306D1C0C684F00C088CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmarterQueue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SQ.SmarterQueue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DAC1306F1C0C684F00C088CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmarterQueueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SQ.SmarterQueueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmarterQueue.app/SmarterQueue";
+			};
+			name = Debug;
+		};
+		DAC130701C0C684F00C088CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmarterQueueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SQ.SmarterQueueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmarterQueue.app/SmarterQueue";
+			};
+			name = Release;
+		};
+		DAC130721C0C684F00C088CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SmarterQueueUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SQ.SmarterQueueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SmarterQueue;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DAC130731C0C684F00C088CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SmarterQueueUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SQ.SmarterQueueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SmarterQueue;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAC130391C0C684E00C088CC /* Build configuration list for PBXProject "SmarterQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC130691C0C684F00C088CC /* Debug */,
+				DAC1306A1C0C684F00C088CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC1306B1C0C684F00C088CC /* Build configuration list for PBXNativeTarget "SmarterQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC1306C1C0C684F00C088CC /* Debug */,
+				DAC1306D1C0C684F00C088CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DAC1306E1C0C684F00C088CC /* Build configuration list for PBXNativeTarget "SmarterQueueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC1306F1C0C684F00C088CC /* Debug */,
+				DAC130701C0C684F00C088CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DAC130711C0C684F00C088CC /* Build configuration list for PBXNativeTarget "SmarterQueueUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC130721C0C684F00C088CC /* Debug */,
+				DAC130731C0C684F00C088CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAC130361C0C684E00C088CC /* Project object */;
+}
