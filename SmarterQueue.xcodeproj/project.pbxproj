@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F6825DE1C0E28BC0062A891 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6825DD1C0E28BB0062A891 /* LogInViewController.m */; };
+		3F6825E11C0E41AC0062A891 /* TutorialContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6825E01C0E41AC0062A891 /* TutorialContentViewController.m */; };
+		3F6825E71C0E4CB70062A891 /* EmbededViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6825E61C0E4CB70062A891 /* EmbededViewController.m */; };
 		DAC130431C0C684F00C088CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC130421C0C684F00C088CC /* main.m */; };
 		DAC130461C0C684F00C088CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC130451C0C684F00C088CC /* AppDelegate.m */; };
 		DAC1304C1C0C684F00C088CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC1304A1C0C684F00C088CC /* Main.storyboard */; };
@@ -42,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F6825DC1C0E28BB0062A891 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		3F6825DD1C0E28BB0062A891 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		3F6825DF1C0E41AC0062A891 /* TutorialContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialContentViewController.h; sourceTree = "<group>"; };
+		3F6825E01C0E41AC0062A891 /* TutorialContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialContentViewController.m; sourceTree = "<group>"; };
+		3F6825E51C0E4CB70062A891 /* EmbededViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbededViewController.h; sourceTree = "<group>"; };
+		3F6825E61C0E4CB70062A891 /* EmbededViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbededViewController.m; sourceTree = "<group>"; };
 		DAC1303E1C0C684F00C088CC /* SmarterQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmarterQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC130421C0C684F00C088CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DAC130441C0C684F00C088CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,7 +135,13 @@
 				DAC130451C0C684F00C088CC /* AppDelegate.m */,
 				DAC1307B1C0C685900C088CC /* SQFirstViewController.h */,
 				DAC1307C1C0C685900C088CC /* SQFirstViewController.m */,
+				3F6825DC1C0E28BB0062A891 /* LogInViewController.h */,
+				3F6825DD1C0E28BB0062A891 /* LogInViewController.m */,
 				DAC1304A1C0C684F00C088CC /* Main.storyboard */,
+				3F6825E51C0E4CB70062A891 /* EmbededViewController.h */,
+				3F6825E61C0E4CB70062A891 /* EmbededViewController.m */,
+				3F6825DF1C0E41AC0062A891 /* TutorialContentViewController.h */,
+				3F6825E01C0E41AC0062A891 /* TutorialContentViewController.m */,
 				DAC1304D1C0C684F00C088CC /* Assets.xcassets */,
 				DAC1304F1C0C684F00C088CC /* LaunchScreen.storyboard */,
 				DAC130521C0C684F00C088CC /* Info.plist */,
@@ -245,6 +260,7 @@
 				TargetAttributes = {
 					DAC1303D1C0C684F00C088CC = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = D5F6WJW852;
 					};
 					DAC130561C0C684F00C088CC = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -311,6 +327,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6825DE1C0E28BC0062A891 /* LogInViewController.m in Sources */,
+				3F6825E71C0E4CB70062A891 /* EmbededViewController.m in Sources */,
 				DAC130C71C0C685900C088CC /* RECommonFunctions.m in Sources */,
 				DAC130461C0C684F00C088CC /* AppDelegate.m in Sources */,
 				DAC130B31C0C685900C088CC /* DEMOLeftMenuViewController.m in Sources */,
@@ -318,6 +336,7 @@
 				DAC130B21C0C685900C088CC /* SQFirstViewController.m in Sources */,
 				DAC130C91C0C685900C088CC /* UIViewController+RESideMenu.m in Sources */,
 				DAC130431C0C684F00C088CC /* main.m in Sources */,
+				3F6825E11C0E41AC0062A891 /* TutorialContentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SmarterQueue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SQ.SmarterQueue;
@@ -469,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SmarterQueue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SQ.SmarterQueue;
@@ -543,6 +564,7 @@
 				DAC1306D1C0C684F00C088CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAC1306E1C0C684F00C088CC /* Build configuration list for PBXNativeTarget "SmarterQueueTests" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +573,7 @@
 				DAC130701C0C684F00C088CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAC130711C0C684F00C088CC /* Build configuration list for PBXNativeTarget "SmarterQueueUITests" */ = {
 			isa = XCConfigurationList;
@@ -559,6 +582,7 @@
 				DAC130731C0C684F00C088CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

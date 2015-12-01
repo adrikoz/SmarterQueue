@@ -7,8 +7,11 @@
 //
 
 #import "SQFirstViewController.h"
+#import "LogInViewController.h"
 
-@interface SQFirstViewController ()
+@interface SQFirstViewController (){
+    BOOL isFirstTime;
+}
 
 @end
 
@@ -58,12 +61,20 @@
     imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     imageView.image = [UIImage imageNamed:@"Balloon"];
     [self.view addSubview:imageView];*/
+    
+    //Check if first open//
+    isFirstTime = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     NSLog(@"DEMOFirstViewController will appear");
+    if(isFirstTime == YES){
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        LogInViewController *LogInVc = [storyboard instantiateViewControllerWithIdentifier:@"LogInViewController"];
+        [self presentViewController:LogInVc animated:YES completion:nil];
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
