@@ -26,8 +26,8 @@
 
 -(void)moveToTutorial{
     //NSLog(@"%f",self.view.frame.size.width);
-    self.leftMarginOfBackgroundView.constant -= self.view.frame.size.width ;
-    self.rightMarginOfBackgroundView.constant += self.view.frame.size.width;
+    self.leftMarginOfBackgroundView.constant = -self.view.bounds.size.width -16;
+    self.rightMarginOfBackgroundView.constant = self.view.bounds.size.width -16;
     [UIView animateWithDuration:0.5
                      animations:^{
                          [self.view layoutIfNeeded];
