@@ -8,6 +8,7 @@
 
 #import "SQFirstViewController.h"
 #import "LogInViewController.h"
+#import "SQPhotoReadyViewController.h"
 
 @interface SQFirstViewController (){
     BOOL isFirstTime;
@@ -69,12 +70,18 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    NSLog(@"DEMOFirstViewController will appear");
+    /*NSLog(@"DEMOFirstViewController will appear");
     if(isFirstTime == YES){
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         LogInViewController *LogInVc = [storyboard instantiateViewControllerWithIdentifier:@"LogInViewController"];
         [self presentViewController:LogInVc animated:YES completion:nil];
-    }
+    }*/
+    /*NSLog(@"DEMOFirstViewController will appear");
+    if(isFirstTime == YES){
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        SQPhotoReadyViewController *LogInVc = [storyboard instantiateViewControllerWithIdentifier:@"SQPhotoReadyViewController"];
+        [self presentViewController:LogInVc animated:YES completion:nil];
+    }*/
 }
 
 - (void)viewWillDisappear:(BOOL)animated
