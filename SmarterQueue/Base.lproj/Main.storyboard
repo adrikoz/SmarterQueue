@@ -151,51 +151,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="profile pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="omn-XX-1oA">
-                                <rect key="frame" x="70" y="69" width="460" height="253"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.22352941179999999" green="0.70980392160000005" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tutorial Header" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kng-HU-vyx">
-                                <rect key="frame" x="50" y="368" width="499" height="53"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="Szy-Dy-am3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIZ-qD-6hP">
-                                <rect key="frame" x="50" y="429" width="499" height="100"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.99607843139999996" green="0.43921568630000002" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="wdW-P6-cPc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hep-jh-xdy">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qX-vg-jVB">
-                                        <rect key="frame" x="212" y="319" width="175" height="40"/>
+                                        <rect key="frame" x="212" y="314" width="175" height="40"/>
                                         <animations/>
-                                        <color key="backgroundColor" red="0.99607843139999996" green="0.43921568630000002" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="175" id="Ra0-NO-SGF"/>
                                             <constraint firstAttribute="height" constant="40" id="zIo-g4-TKN"/>
                                         </constraints>
-                                        <state key="normal" title="Enable Notifications"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                        <state key="normal" title="Enable Notifications">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To finish this tutorial, please allow SmartQueue to send you Push Notifications" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUC-11-HVc">
-                                        <rect key="frame" x="56" y="238" width="487" height="41"/>
+                                        <rect key="frame" x="56" y="230" width="487" height="41"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -205,9 +186,9 @@
                                     <constraint firstItem="4qX-vg-jVB" firstAttribute="centerX" secondItem="Hep-jh-xdy" secondAttribute="centerX" id="LLR-II-miz"/>
                                     <constraint firstItem="mUC-11-HVc" firstAttribute="leading" secondItem="Hep-jh-xdy" secondAttribute="leading" constant="56" id="N2T-ad-o4T"/>
                                     <constraint firstItem="4qX-vg-jVB" firstAttribute="centerX" secondItem="mUC-11-HVc" secondAttribute="centerX" id="V9Q-wq-1JY"/>
-                                    <constraint firstItem="mUC-11-HVc" firstAttribute="top" secondItem="Hep-jh-xdy" secondAttribute="top" constant="238" id="bXh-Bt-70b"/>
+                                    <constraint firstItem="mUC-11-HVc" firstAttribute="top" secondItem="Hep-jh-xdy" secondAttribute="top" constant="230" id="bXh-Bt-70b"/>
                                     <constraint firstAttribute="trailing" secondItem="mUC-11-HVc" secondAttribute="trailing" constant="57" id="fWH-jF-27A"/>
-                                    <constraint firstItem="4qX-vg-jVB" firstAttribute="top" secondItem="mUC-11-HVc" secondAttribute="bottom" constant="40" id="wCP-PD-Q2H"/>
+                                    <constraint firstItem="4qX-vg-jVB" firstAttribute="top" secondItem="mUC-11-HVc" secondAttribute="bottom" constant="43" id="wCP-PD-Q2H"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -215,6 +196,33 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="omn-XX-1oA">
+                                <rect key="frame" x="70" y="69" width="460" height="253"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tutorial Header" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kng-HU-vyx">
+                                <rect key="frame" x="50" y="368" width="499" height="53"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="Szy-Dy-am3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIZ-qD-6hP">
+                                <rect key="frame" x="50" y="429" width="499" height="100"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="wdW-P6-cPc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -237,6 +245,7 @@
                     </view>
                     <connections>
                         <outlet property="descriptionLabel" destination="CIZ-qD-6hP" id="6Xt-jg-OUq"/>
+                        <outlet property="enableNotifButton" destination="4qX-vg-jVB" id="CBb-Hb-mC6"/>
                         <outlet property="finalView" destination="Hep-jh-xdy" id="y1n-7r-twZ"/>
                         <outlet property="headerLabel" destination="kng-HU-vyx" id="fao-D4-uyA"/>
                         <outlet property="tutorialImg" destination="omn-XX-1oA" id="2ov-xi-DSA"/>
@@ -271,29 +280,38 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Gd-NR-PLu">
                                         <rect key="frame" x="30" y="521" width="541" height="50"/>
                                         <animations/>
-                                        <color key="backgroundColor" red="0.96470588239999999" green="0.80000000000000004" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.070588235289999995" green="0.33725490200000002" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="CF3-el-Ghz"/>
                                         </constraints>
-                                        <state key="normal" title="Log in with Instagram"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="Log in with Instagram">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="LogInTapped:" destination="cBg-8W-nE6" eventType="touchUpInside" id="JaT-Hy-v80"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outline features + reasons to log in with Instagram" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJ8-ZO-fGG">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule Instagram posts on SmarterQueue &amp; deploy them through the app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJ8-ZO-fGG">
                                         <rect key="frame" x="70" y="423" width="460" height="75"/>
                                         <animations/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="zaV-5g-l8c"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="cJ8-ZO-fGG" secondAttribute="trailing" constant="70" id="04d-9O-pWv"/>
                                     <constraint firstItem="ZFN-Vo-ht0" firstAttribute="top" secondItem="SHk-4S-YAv" secondAttribute="top" constant="40" id="5aj-8l-MYH"/>
@@ -357,12 +375,12 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="ovp-ex-XGJ"/>
                                 </constraints>
-                                <color key="pageIndicatorTintColor" red="0.0" green="0.80000000000000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </pageControl>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.94901960780000005" green="0.76470588240000004" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="X1X-aD-fbM" firstAttribute="centerX" secondItem="yOD-CR-Dk1" secondAttribute="centerX" id="PNX-aQ-1Kl"/>
                             <constraint firstItem="iTa-vW-fqn" firstAttribute="top" secondItem="X1X-aD-fbM" secondAttribute="bottom" constant="20" id="tdP-Ii-jhA"/>

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "TutorialContentViewController.h"
 
-@interface EmbededViewController : UIViewController <UIPageViewControllerDataSource>
+@interface EmbededViewController : UIViewController <UIPageViewControllerDataSource,UIPageViewControllerDelegate>
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 @property (strong, nonatomic) NSArray *pageTitles;

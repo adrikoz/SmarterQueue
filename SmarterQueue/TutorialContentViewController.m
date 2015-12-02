@@ -26,6 +26,8 @@
         self.finalView.alpha = 0;
         [self.view sendSubviewToBack:self.finalView];
     }
+    self.enableNotifButton.layer.borderColor = [UIColor darkGrayColor].CGColor;
+    self.enableNotifButton.layer.borderWidth = 1.5f;
 }
 
 - (void)didReceiveMemoryWarning {

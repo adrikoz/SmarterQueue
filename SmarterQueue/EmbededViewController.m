@@ -31,6 +31,7 @@
     [self.view addSubview:_pageViewController.view];
     [self.view addSubview:self.pageControl];
     [self.pageViewController didMoveToParentViewController:self];
+    self.pageViewController.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,13 +54,11 @@
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
     NSUInteger index = ((TutorialContentViewController*) viewController).pageIndex;
-    self.pageControl.currentPage = index;
     if ((index == 0) || (index == NSNotFound)) {
         return nil;
     }
     
     index--;
-    //self.pageControl.currentPage = index;
     return [self viewControllerAtIndex:index];
     
 }
@@ -67,7 +66,6 @@
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
     NSUInteger index = ((TutorialContentViewController*) viewController).pageIndex;
-    self.pageControl.currentPage = index;
     if (index == NSNotFound) {
         return nil;
     }
@@ -88,9 +86,16 @@
     pageContentViewController.imageFile = self.pageImages[index];
     pageContentViewController.headerText = self.pageTitles[index];
     pageContentViewController.descriptionText = self.pageDescriptions[index];
-    //NSLog(@"index: %lu",(unsigned long)index);
     pageContentViewController.pageIndex = index;
     
     return pageContentViewController;
 }
+
+- (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed
+{
+    TutorialContentViewController *currentViewController = pageViewController.viewControllers[0];
+    self.pageControl.currentPage = currentViewController.pageIndex;
+    
+}
+
 @end

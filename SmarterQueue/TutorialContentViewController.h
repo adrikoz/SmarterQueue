@@ -14,6 +14,7 @@
 @property (weak,nonatomic) IBOutlet UILabel *headerLabel;
 @property (weak,nonatomic) IBOutlet UILabel *descriptionLabel;
 @property (weak,nonatomic) IBOutlet UIView *finalView;
+@property (weak,nonatomic) IBOutlet UIButton *enableNotifButton;
 @property NSUInteger pageIndex;
 @property NSString *headerText;
 @property NSString *descriptionText;
