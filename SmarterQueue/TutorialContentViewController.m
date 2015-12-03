@@ -8,7 +8,9 @@
 
 #import "TutorialContentViewController.h"
 
-@interface TutorialContentViewController ()
+@interface TutorialContentViewController (){
+    NSTimer *tokenTimer;
+}
 
 @end
 
@@ -35,14 +37,39 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(IBAction)enablePushNotifs:(id)sender{
+    if ([[UIApplication sharedApplication]respondsToSelector:@selector(isRegisteredForRemoteNotifications)])
+    {
+        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
+        
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+    }
+    else
+    {
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
+         (UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert)];
+    }
+    tokenTimer = [NSTimer scheduledTimerWithTimeInterval:1.5
+                                                  target:self
+                                                selector:@selector(checkForToken)
+                                                userInfo:nil
+                                                 repeats:YES];
 }
-*/
+
+-(void)checkForToken{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if([defaults objectForKey:@"apns_device_token"] != nil){
+        NSLog(@"Got token");
+        [tokenTimer invalidate];
+        //Register mobile device for Instagram push notifications
+        
+        //When request completes...
+        [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSString* firstTime = @"No";
+        [defaults setObject:firstTime forKey:@"firstTime"];
+        [defaults synchronize];
+    }
+}
 
 @end

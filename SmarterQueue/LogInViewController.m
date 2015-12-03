@@ -7,6 +7,7 @@
 //
 
 #import "LogInViewController.h"
+#import "InstagramKit.h"
 
 @interface LogInViewController ()
 
@@ -36,9 +37,26 @@
 
 -(IBAction)LogInTapped:(id)sender{
     //Check log in
-    
+    /*[self.view bringSubviewToFront:self.logInWebView];
+    NSURL *authURL = [[InstagramEngine sharedEngine] authorizationURL];
+    [self.logInWebView loadRequest:[NSURLRequest requestWithURL:authURL]];*/
     //Finish checking log in
     [self moveToTutorial];
+}
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    NSError *error;
+    if ([[InstagramEngine sharedEngine] receivedValidAccessTokenFromURL:request.URL error:&error])
+    {
+        [self authenticationSuccess];
+    }
+    return YES;
+}
+
+- (void)authenticationSuccess
+{
+    NSLog(@"Successfully logged in!");
 }
 /*
 #pragma mark - Navigation

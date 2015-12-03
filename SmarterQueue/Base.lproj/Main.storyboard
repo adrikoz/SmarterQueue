@@ -172,6 +172,9 @@
                                                 <integer key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="enablePushNotifs:" destination="kYl-Su-9dm" eventType="touchUpInside" id="DbN-9Q-dWy"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To finish this tutorial, please allow SmartQueue to send you Push Notifications" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUC-11-HVc">
                                         <rect key="frame" x="56" y="230" width="487" height="41"/>
@@ -270,6 +273,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SHk-4S-YAv">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
+                                    <webView alpha="0.0" contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ShM-cA-ZPP">
+                                        <rect key="frame" x="8" y="8" width="584" height="584"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                    </webView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZFN-Vo-ht0">
                                         <rect key="frame" x="35" y="40" width="530" height="50"/>
                                         <animations/>
@@ -320,8 +328,12 @@
                                     <constraint firstItem="cJ8-ZO-fGG" firstAttribute="leading" secondItem="SHk-4S-YAv" secondAttribute="leading" constant="70" id="E4Z-G8-C4n"/>
                                     <constraint firstAttribute="bottom" secondItem="6Gd-NR-PLu" secondAttribute="bottom" constant="29" id="F5s-Sf-kBX"/>
                                     <constraint firstAttribute="trailing" secondItem="ZFN-Vo-ht0" secondAttribute="trailing" constant="35" id="YBb-a8-Dld"/>
+                                    <constraint firstItem="ShM-cA-ZPP" firstAttribute="leading" secondItem="SHk-4S-YAv" secondAttribute="leading" constant="8" id="guw-tM-l1x"/>
+                                    <constraint firstItem="ShM-cA-ZPP" firstAttribute="top" secondItem="SHk-4S-YAv" secondAttribute="top" constant="8" id="iHv-9Q-ML2"/>
+                                    <constraint firstAttribute="trailing" secondItem="ShM-cA-ZPP" secondAttribute="trailing" constant="8" id="iKO-88-lAq"/>
                                     <constraint firstItem="6Gd-NR-PLu" firstAttribute="top" secondItem="cJ8-ZO-fGG" secondAttribute="bottom" constant="23" id="nCi-DX-GFi"/>
                                     <constraint firstItem="6Gd-NR-PLu" firstAttribute="leading" secondItem="SHk-4S-YAv" secondAttribute="leading" constant="30" id="nPc-nX-Fvd"/>
+                                    <constraint firstAttribute="bottom" secondItem="ShM-cA-ZPP" secondAttribute="bottom" constant="8" id="qLe-Mt-4jm"/>
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rVi-B7-eZp">
@@ -350,6 +362,7 @@
                     <navigationItem key="navigationItem" id="AOl-Pd-doG"/>
                     <connections>
                         <outlet property="leftMarginOfBackgroundView" destination="wVk-Tw-bfI" id="kmN-x1-cah"/>
+                        <outlet property="logInWebView" destination="ShM-cA-ZPP" id="TyE-Rq-WqM"/>
                         <outlet property="rightMarginOfBackgroundView" destination="wYq-at-Qp0" id="LXF-Kp-jKG"/>
                     </connections>
                 </viewController>

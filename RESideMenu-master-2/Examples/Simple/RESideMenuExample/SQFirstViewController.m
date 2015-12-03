@@ -11,7 +11,6 @@
 #import "SQPhotoReadyViewController.h"
 
 @interface SQFirstViewController (){
-    BOOL isFirstTime;
 }
 
 @end
@@ -64,18 +63,22 @@
     [self.view addSubview:imageView];*/
     
     //Check if first open//
-    isFirstTime = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    /*NSLog(@"DEMOFirstViewController will appear");
-    if(isFirstTime == YES){
+    NSLog(@"DEMOFirstViewController will appear");
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if([defaults objectForKey:@"firstTime"] != nil){
+        NSLog(@"not first time");
+    }else{
+        NSLog(@"first time");
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         LogInViewController *LogInVc = [storyboard instantiateViewControllerWithIdentifier:@"LogInViewController"];
         [self presentViewController:LogInVc animated:YES completion:nil];
-    }*/
+
+    }
     /*NSLog(@"DEMOFirstViewController will appear");
     if(isFirstTime == YES){
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
