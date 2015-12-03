@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.postButton.layer.borderColor = self.postButton.titleLabel.textColor.CGColor;
+    self.postButton.layer.borderWidth = 1.5f;
+    
+    //self.textView.layer.borderColor = self.textView.textColor.CGColor;
+    //self.textView.layer.borderWidth = 1.0f;
+    
     [self.textView scrollRangeToVisible:NSMakeRange(0, 1)];
     
     [UIPasteboard generalPasteboard].string = self.textView.text;
