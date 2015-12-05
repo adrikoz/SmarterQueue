@@ -7,7 +7,6 @@
 //
 
 #import "LogInViewController.h"
-#import "InstagramKit.h"
 
 @interface LogInViewController ()
 
@@ -17,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //self.logInWebView.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,7 +25,6 @@
 }
 
 -(void)moveToTutorial{
-    //NSLog(@"%f",self.view.frame.size.width);
     self.leftMarginOfBackgroundView.constant = -self.view.bounds.size.width -16;
     self.rightMarginOfBackgroundView.constant = self.view.bounds.size.width -16;
     [UIView animateWithDuration:0.5
@@ -37,35 +35,50 @@
 
 -(IBAction)LogInTapped:(id)sender{
     //Check log in
-    /*[self.view bringSubviewToFront:self.logInWebView];
-    NSURL *authURL = [[InstagramEngine sharedEngine] authorizationURL];
-    [self.logInWebView loadRequest:[NSURLRequest requestWithURL:authURL]];*/
-    //Finish checking log in
-    [self moveToTutorial];
+    //[self.view bringSubviewToFront:self.logInWebView];
+    //self.logInWebView.alpha = 1;
+    //NSString *scopeStr = @"scope=basic";
+    //NSString *url = [NSString stringWithFormat:@"https://www.instagram.com/oauth/authorize/?client_id=%@&%@&redirect_uri=%@&response_type=code",INSTAGRAM_CLIENT_ID, scopeStr, INSTAGRAM_CALLBACK_BASE];*/
+    //NSString *url = [NSString stringWithFormat:@"http://dev.smarterqueue.com/instagram_login"];
+    //[self.logInWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
+    [self performSelector:@selector(checkInstagramAuth) withObject:nil afterDelay:2];
 }
 
-- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+-(void) didAuthWithToken:(NSString*)token
 {
-    NSError *error;
-    if ([[InstagramEngine sharedEngine] receivedValidAccessTokenFromURL:request.URL error:&error])
+    if(!token)
     {
-        [self authenticationSuccess];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                            message:@"Failed to request token."
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+        [alertView show];
+        return;
     }
-    return YES;
+    
+    //As a test, we'll request a list of popular Instagram photos.
+    NSString *instagramBase = @"https://api.instagram.com/v1";
+    NSString *popularURLString = [NSString stringWithFormat:@"%@/media/popular?access_token=%@", instagramBase, token];
 }
 
-- (void)authenticationSuccess
+-(void) checkInstagramAuth
 {
-    NSLog(@"Successfully logged in!");
+    InstagramAuthController *instagramAuthController = [InstagramAuthController new];
+    instagramAuthController.authDelegate = self;
+    
+    instagramAuthController.modalPresentationStyle = UIModalPresentationFormSheet;
+    instagramAuthController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    
+    [self presentViewController:instagramAuthController animated:YES completion:^{ } ];
+    
+    __weak InstagramAuthController *weakAuthController = instagramAuthController;
+    
+    instagramAuthController.completionBlock = ^(void) {
+        [weakAuthController dismissViewControllerAnimated:YES completion:nil];
+    };
+    NSLog(@"Check instagram auth");
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

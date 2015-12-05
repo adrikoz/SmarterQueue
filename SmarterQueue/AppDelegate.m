@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SmarterQueue-swift.h"
 
 @interface AppDelegate ()
 
@@ -37,6 +38,8 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    [[NFX sharedInstance] start];
     
     return YES;
 }
@@ -98,5 +101,6 @@
 {
     NSLog(@"Failed to get token, error: %@", error);
 }
+
 
 @end

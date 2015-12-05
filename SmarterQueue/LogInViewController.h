@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "TutorialContentViewController.h"
+#import "InstagramAuthController.h"
 
-@interface LogInViewController : UIViewController <UIWebViewDelegate>
+@interface LogInViewController : UIViewController <InstagramAuthDelegate>
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *leftMarginOfBackgroundView;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *rightMarginOfBackgroundView;
